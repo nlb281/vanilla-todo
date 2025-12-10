@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 100px 50px;
+  background: $color-gray-1;
+  font-family: "Inter", sans-serif;
+}
+
+input,
+label,
+button {
+  transition-duration: 0.2s;
+}
+
+:focus-visible {
+  outline: 2px dashed $color-black;
+  outline-offset: 4px;
+  transition-duration: 0s !important;
+}
+
+:where([fill]:not([fill="none"], [fill^="url"])) {
+  fill: currentColor;
+}
+
+:where([stroke]:not([stroke="none"], [stroke^="url"])) {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
