@@ -7,6 +7,119 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="todo" id="app">
+      <h1 class="todo__title">To Do List</h1>
+      <form class="todo__form">
+        <div class="todo__field field">
+          <label for="new-task" class="field__label">New task title</label>
+          <input
+            class="field__input"
+            id="new-task"
+            placeholder=" "
+            autocomplete="off"
+          />
+        </div>
+        <button class="button" type="submit">Add</button>
+      </form>
+      <form class="todo__form">
+        <div class="todo__field field">
+          <label for="search-task" class="field__label">search task</label>
+          <input
+            class="field__input"
+            id="search-task"
+            placeholder=" "
+            autocomplete="off"
+            type="search"
+          />
+        </div>
+      </form>
+      <div class="todo__info">
+        <div class="todo__total-tasks">Total Tasks: <span>0</span></div>
+        <button class="todo__delete-all-button" type="button">
+          Delete All
+        </button>
+      </div>
+      <ul class="todo__list list">
+        <li class="todo__item todo-item">
+          <input class="todo-item__checkbox" id="todo-1" type="checkbox" />
+          <label for="todo-1" class="todo-item__label">Todo 1</label>
+          <button
+            class="todo-item__delete-button"
+            type="button"
+            aria-label="delete"
+            title="Delete"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5L5 15M5 5L15 15"
+                stroke="#757575"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </li>
+        <li class="todo__item todo-item">
+          <input class="todo-item__checkbox" id="todo-2" type="checkbox" />
+          <label for="todo-2" class="todo-item__label">Todo 2</label>
+          <button
+            class="todo-item__delete-button"
+            type="button"
+            aria-label="delete"
+            title="Delete"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5L5 15M5 5L15 15"
+                stroke="#757575"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </li>
+        <li class="todo__item todo-item">
+          <input class="todo-item__checkbox" id="todo-3" type="checkbox" />
+          <label for="todo-3" class="todo-item__label">Todo 3</label>
+          <button
+            class="todo-item__delete-button"
+            type="button"
+            aria-label="delete"
+            title="Delete"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 5L5 15M5 5L15 15"
+                stroke="#757575"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div class="todo__empty-message"></div>
+    </div>
   </body>
 </html>
